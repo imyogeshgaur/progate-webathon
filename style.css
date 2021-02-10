@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(206, 92%, 94%);
 }
 
 a{
@@ -32,6 +35,35 @@ nav ul li:hover {
     color: #fff;
 }
 
+img{
+  width:15rem;
+  height:15rem;
+  border-radius: 50%;
+  position: absolute;
+  left:33rem;
+  top: 6rem;
+  border: 5px solid rgb(80, 147, 235);
+}
+.name{
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  color:#f8a7a7
+}
+textarea{
+  position:absolute;
+  top:24rem;
+  left:20rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #74b9ff;
+  font-family: 'Roboto', sans-serif;
+  resize: none;
+  border: 1px solid #74b9ff;
+  color: white;
+  width:45rem;
+  height: 14rem;
+}
 
 @media all and (max-width: 600px) {
     nav ul {
@@ -40,5 +72,31 @@ nav ul li:hover {
     nav ul li {
         text-align: center;
         border-radius: 3rem;
+    }
+    img{
+      width:15rem;
+      height:15rem;
+      border-radius: 50%;
+      position: relative;
+      left:4rem;
+      top:4rem;
+      border: 5px solid rgb(80, 147, 235);
+    }
+    .name{
+       display: absolute;
+       top:20rem;
+       left:4rem;
+       color: #ffac74;
+    }
+    textarea{
+      position: absolute;
+      left: 4rem;
+      right: 0rem;
+      top:50rem;
+      width:15rem;
+      height: 15rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 }
