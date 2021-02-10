@@ -35,25 +35,25 @@ nav ul li:hover {
     color: #fff;
 }
 
-img{
+#myPic{
   width:15rem;
   height:15rem;
   border-radius: 50%;
-  position: absolute;
-  left:33rem;
-  top: 6rem;
+  display: flex;
+  margin-left:33rem;
+  margin-top:3rem;
   border: 5px solid rgb(80, 147, 235);
 }
 .name{
   display: flex;
   align-items: center;
-  font-size: 5rem;
-  color:#f8a7a7
+  font-size: 3rem;
+  color:#f8a5a5;
+  margin-left:33rem;
 }
 textarea{
-  position:absolute;
-  top:24rem;
-  left:20rem;
+  display: flex;
+  margin-left:20rem;
   border-radius: 1rem;
   text-align: center;
   background-color: #74b9ff;
@@ -62,9 +62,36 @@ textarea{
   border: 1px solid #74b9ff;
   color: white;
   width:45rem;
-  height: 14rem;
+  height: 8rem;
+  box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
 }
-
+.education{
+  display: flex;
+  flex-direction: column;
+  margin-left: 24rem;
+  margin-right: 28rem;
+  background-color: coral;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
+}
+#mySchool{
+  display: flex;
+  margin-left: 28rem;
+  margin-top: 3rem;
+  border: 5px solid rgb(221, 191, 255);
+  border-radius: 1rem;
+}
+.firstEdu{
+  color:rgb(251, 255, 0);
+}
+.secondEdu{
+  color:rgb(159, 240, 233)
+}
+.school{
+  color:rgb(158, 219, 100);
+}
 @media all and (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -73,13 +100,13 @@ textarea{
         text-align: center;
         border-radius: 3rem;
     }
-    img{
+    #myPic{
       width:15rem;
       height:15rem;
       border-radius: 50%;
-      position: relative;
+      display: flex;
       left:4rem;
-      top:4rem;
+      top:20rem;
       border: 5px solid rgb(80, 147, 235);
     }
     .name{
@@ -89,14 +116,38 @@ textarea{
        color: #ffac74;
     }
     textarea{
-      position: absolute;
+      position: flex;
       left: 4rem;
       right: 0rem;
       top:50rem;
       width:15rem;
       height: 15rem;
+    }
+    .education{
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      background-color: coral;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
+    }
+    #mySchool{
+      display: flex;
+      margin-left: 2rem;
+      margin-top: 3rem;
+      border: 5px solid rgb(221, 191, 255);
+      border-radius: 1rem;
+    }
+    .firstEdu{
+      color:rgb(251, 255, 0);
+    }
+    .secondEdu{
+      color:rgb(159, 240, 233)
+    }
+    .school{
+      color:rgb(158, 219, 100);
     }
 }
