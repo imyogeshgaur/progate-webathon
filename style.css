@@ -52,9 +52,12 @@ nav ul li:hover {
   color:#f8a5a5;
   margin-left:33rem;
 }
-textarea{
+#about{
   display: flex;
-  margin-left:20rem;
+  flex-direction: column;
+  margin-left:24rem;
+  margin-right: 28rem;
+  margin-top: 2rem;
   border-radius: 1rem;
   text-align: center;
   background-color: #74b9ff;
@@ -103,26 +106,33 @@ textarea{
         border-radius: 3rem;
     }
     #myPic{
+      display: flex;
+      margin: 2rem 4rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
+      border: 5px solid rgb(80, 147, 235);
       width:15rem;
       height:15rem;
       border-radius: 50%;
-      display: flex;
-      left:4rem;
-      top:20rem;
-      border: 5px solid rgb(80, 147, 235);
     }
     .name{
-       display: absolute;
-       top:20rem;
-       left:4rem;
-       color: #ffac74;
+      display: flex;
+      margin: 2rem 4rem;
+      font-size: 2.4rem;
+      text-align: center;
+      color: #ffac74;
     }
-    textarea{
-      position: flex;
-      left: 4rem;
-      right: 0rem;
-      top:50rem;
-      width:15rem;
+    #about{
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 6rem;
+      background-color:#74b9ff;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
+      width:12rem;
       height: 15rem;
     }
     .education{
