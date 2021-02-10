@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap');
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: hsl(206, 92%, 94%);
+  overflow: hidden;
 }
 
 a{
@@ -97,6 +99,110 @@ nav ul li:hover {
 .school{
   color:rgb(158, 219, 100);
 }
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid hsl(206, 92%, 94%);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  resize:none;
+  font-family: 'Mulish', sans-serif;
+  outline: none;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: 'Mulish', sans-serif;
+}
+
+input[type=submit] {
+  background-image: radial-gradient(rgb(180, 97, 248),rgb(222, 111, 226));
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: 'Mulish', sans-serif;
+  outline: none;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: hsl(206, 92%, 94%);
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: rgb(140, 140, 228);
+  border-radius: 43%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1.5rem;
+}
+#linkedin:hover {
+  background-color: rgb(40, 103, 178);
+  box-shadow: 2px -1px 24px -3px rgba(40, 103, 178,0.75);
+}
+#github:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
+}
+#twitter:hover {
+  background-color: rgb(13, 167, 228);
+  box-shadow: 2px -1px 24px -3px rgba(13,167,228,0.75);
+}
+#facebook:hover {
+  background-color: #3b5998;
+  box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
+}
+#instagram:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(64, 93, 230),
+    rgb(88, 81, 219),
+    rgb(131, 58, 180),
+    rgb(193, 53, 132),
+    rgb(225, 48, 108),
+    rgb(253, 29, 29),
+    rgb(245, 96, 64),
+    rgb(247, 119, 55),
+    rgb(252, 175, 69),
+    rgb(255, 220, 128)
+  );
+  box-shadow: 2px -1px 24px -3px rgba(131,58,180,0.75);
+}
+#telegram:hover{
+  background-color: rgb(0, 169, 236);
+  box-shadow: 2px -1px 24px -3px rgba(0,169,236,0.75);
+}
+
 @media all and (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -161,5 +267,10 @@ nav ul li:hover {
     }
     .school{
       color:rgb(158, 219, 100);
+    }
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+      font-family: 'Mulish', sans-serif;
     }
 }
