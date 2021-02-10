@@ -6,7 +6,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: hsl(206, 92%, 94%);
-  overflow: hidden;
 }
 
 a{
@@ -239,7 +238,7 @@ input[type=submit] {
       text-align: center;
       box-shadow: 2px -1px 24px -3px rgba(0,0,0,0.75);
       width:12rem;
-      height: 15rem;
+      height: 20rem;
     }
     .education{
       display: flex;
@@ -272,5 +271,17 @@ input[type=submit] {
       width: 100%;
       margin-top: 0;
       font-family: 'Mulish', sans-serif;
+    }
+    .social-icons a {
+      display: inline-block;
+      height: 3.5rem;
+      width: 3.5rem;
+      margin:1rem 4rem;
+      background-color: rgb(140, 140, 228);
+      color: #fff;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+      margin-right: 1.5rem;
     }
 }
