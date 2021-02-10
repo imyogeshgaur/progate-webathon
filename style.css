@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  padding: 0 3.4rem;
+}
+
+nav {
+    font-size: 2rem;
+    background-image: linear-gradient(rgb(102, 235, 97),rgb(0, 247, 255));
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-image: linear-gradient(rgb(241, 116, 231),rgb(153, 0, 255));
+    color: #fff;
+}
+
+
+@media all and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center;
+        border-radius: 3rem;
+    }
+}
